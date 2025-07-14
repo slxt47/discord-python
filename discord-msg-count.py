@@ -1,8 +1,8 @@
 from discord.ext import commands
 import discord
 
-token = "DEIN_DISCORD_TOKEN"
-target_user_id =  USER_ID
+token = "YOUR DC TOKEN"
+target_user_id =  User_id
 
 bot = commands.Bot(command_prefix='!', self_bot=True)
 
