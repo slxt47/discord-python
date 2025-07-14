@@ -33,4 +33,4 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('DEIN_DISCORD_TOKEN')
+client.run('YOUR DC TOKEN')
