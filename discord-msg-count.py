@@ -1,8 +1,8 @@
 from discord.ext import commands
 import discord
 
-token = "NDgzMzUzMTQ0OTMyMTcxNzc2.GEwjmZ.FYgmD_O6FJqq80wK4gG9p0EsgYUrpqOKFi3WiU"
-target_user_id =  850668669453467659
+token = "YOUR DC TOKEN"
+target_user_id =  User_id
 
 bot = commands.Bot(command_prefix='!', self_bot=True)
 
