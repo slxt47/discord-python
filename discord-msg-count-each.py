@@ -3,8 +3,8 @@ import discord
 from datetime import datetime, timezone
 
 # Dein eigener Discord-Token (User-Token)
-token = "NDgzMzUzMTQ0OTMyMTcxNzc2.GEwjmZ.FYgmD_O6FJqq80wK4gG9p0EsgYUrpqOKFi3WiU"
-target_user_id =  559606751335284748 #850668669453467659 # Ziel-User-ID
+token = "YOUR DC TOKEN"
+target_user_id =   USER_ID # Ziel-User-ID
 
 start_date = datetime(2000, 1, 1, tzinfo=timezone.utc)
 
