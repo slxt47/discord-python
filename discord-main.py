@@ -2,14 +2,14 @@ from discord.ext import commands
 import discord
 from datetime import datetime, timezone
 
-token = "DEIN_DISCORD_TOKEN"
+token = "YOUR DICORD TOKEN" #CHANGE
 
 target_user_ids = [
-    USER_ID,
-    USER_ID,
-    USER_ID,
-    USER_ID,
-    USER_ID
+    user_id_1,#CHANGE
+    user_id_2,#CHANGE
+    user_id_3,#CHANGE
+    user_id_4,#CHANGE
+    user_id_5#CHANGE
 ]
 
 start_date = datetime(2025, 1, 1, tzinfo=timezone.utc)
