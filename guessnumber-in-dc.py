@@ -1,9 +1,14 @@
-import discord
-import random
 import asyncio
+import random
+
+import discord
+
+from token_laden import token_laden
 
 
 class MyClient(discord.Client):
+    """Ratespiel: $guess in einen Chat schreiben, dann eine Zahl von 1–10 raten (5 Sekunden Zeit)."""
+
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
         print('------')
@@ -17,7 +22,7 @@ class MyClient(discord.Client):
             await message.channel.send('Guess a number between 1 and 10.')
 
             def is_correct(m):
-                return m.author == message.author and m.content.isdigit()
+                return m.author == message.author and m.channel == message.channel and m.content.isdigit()
 
             answer = random.randint(1, 10)
 
@@ -33,4 +38,4 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('YOUR DC TOKEN')
+client.run(token_laden())
